@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using static Define;
+using UnityEngine.Rendering;
 
 public class UI_TitleScene : UI_Base
 {
@@ -61,7 +62,8 @@ public class UI_TitleScene : UI_Base
 
         GetObject((int)GameObjects.StartButton).BindEvent(() =>
         {
-            Debug.Log("OnClickStartButton");
+            Managers.Scene.LoadScene(EScene.GameScene);
+            GetText((int)Texts.StartText).text = "Load Game...";
         });
 
         GetObject((int)GameObjects.StartButton).gameObject.SetActive(false);
@@ -106,26 +108,11 @@ public class UI_TitleScene : UI_Base
                         //GetObject((int)GameObjects.ArtTestSceneButton).SetActive(true);
                         //Managers.Data.Init();
                         //Managers.Game.Init();
-                        Managers.Resource.Instantiate("Hero");
-                        TestDOAnimation();
                     }
                 });
 
                 break;
         }
-    }
-
-    private void TestDOAnimation()
-    {
-        Sequence seq = DOTween.Sequence();
-
-        Transform tf = GetText((int)Texts.StartText).rectTransform;
-        tf.localScale = Vector3.one;
-
-        seq.Append(tf.DOScale(1.5f, 0.8f))
-            .Append(tf.DOScale(1.0f, 0.8f))
-            .SetLoops(-1);
-            
     }
 
     private void OnInitialized()

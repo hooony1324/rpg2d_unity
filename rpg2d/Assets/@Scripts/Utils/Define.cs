@@ -596,15 +596,21 @@ public static class SortingLayers
 
 public static class AnimName
 {
-    public const string ATTACK = "attack";
-    public const string IDLE = "idle";
-    public const string MOVE = "move";
-    public const string DAMAGED = "hit";
-    public const string DEAD = "dead";
-    public const string EVENT_ATTACK_A = "event_attack";
-    public const string EVENT_ATTACK_B = "event_attack";
-    public const string EVENT_SKILL_A = "event_attack";
-    public const string EVENT_SKILL_B = "event_attack";
+    //public const string ATTACK = "attack";
+    //public const string IDLE = "idle";
+    //public const string MOVE = "move";
+    //public const string DAMAGED = "hit";
+    //public const string DEAD = "dead";
+    //public const string EVENT_ATTACK_A = "event_attack";
+    //public const string EVENT_ATTACK_B = "event_attack";
+    //public const string EVENT_SKILL_A = "event_attack";
+    //public const string EVENT_SKILL_B = "event_attack";
+
+    public static readonly int ATTACK = Animator.StringToHash("Attack");
+    public static readonly int IDLE = Animator.StringToHash("Idle");
+    public static readonly int MOVE = Animator.StringToHash("Move");
+    public static readonly int DAMAGED = Animator.StringToHash("Hit");
+    public static readonly int DEAD = Animator.StringToHash("Dead");
 }
 
 public static class EquipmentUIColors

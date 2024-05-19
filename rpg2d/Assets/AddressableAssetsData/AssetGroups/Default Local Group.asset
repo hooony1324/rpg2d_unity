@@ -16,7 +16,31 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: e1fea0461b53f2141a3515deac1db5e7
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: fbb1a05d50adc1c438fbd32f5fe5a60c
+    m_Address: Martial
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1d02c564a43eb541b5138f5ec90b674
+    m_Address: Knight
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 177b2d5c6d20716488896f5633d6050f
+    m_Address: TestMap
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3196c3220714db488af33fdf10eb02d
+    m_Address: UI_Joystick
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: e3a4321f835b06843a773d2c4a810903, type: 2}
   m_SchemaSet:
